@@ -1,78 +1,149 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
-
 body {
-  background-color: #363940;
-  font-family: sans-serif;
-  color: white;
+    background-color: #363940;
+    font-family: sans-serif;
+    color: white;
 }
+
 div {
-  display: block;
+    display: block;
 }
+
 .titles {
-  /*padding: 3em;*/
-  /*height: 100vh;*/
-  position: relative;
-  box-sizing: border-box;
+    /*padding: 3em;*/
+    /*height: 100vh;*/
+    position: relative;
+    box-sizing: border-box;
 }
+
 #container {
-  margin: 50px;
-  padding: auto;
-  /*width: auto;
+    margin: 50px;
+    padding: auto;
+    /*width: auto;
   heigth: 500px;*/
-  min-height: 50px;
-  border: white;
-  position: relative;
-  text-align: left;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  background: none;
+    min-height: 50px;
+    border: white;
+    position: relative;
+    text-align: left;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: none;
 }
+
+#topList {
+    margin: 50px;
+    padding: auto;
+    min-height: 50px;
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-flow: column;
+    flex-direction: row;
+}
+
 .embed {
-  color: white;
-  background-color: #32353A;
-  padding: 50px;
-  font: 600 16px "Karla", sans-serif;
-  margin-bottom: 20px;
-  border-radius: 5px 15px 15px 5px;
-  border-left: 10px #592a16 solid;
-  transition: 0.3s;
-  size: (1, 0.8);
+    color: white;
+    background-color: #32353A;
+    padding: 50px;
+    font: 600 16px "Karla", sans-serif;
+    margin-bottom: 20px;
+    border-radius: 5px 15px 15px 5px;
+    border-left: 10px #592a16 solid;
+    transition: 0.3s;
+    size: (1, 0.8);
 }
+
 .embed:hover {
-  border-left: 10px #51ff3a solid;
-  transform: scale(1.06);
-  
+    border-left: 10px #51ff3a solid;
+    transform: scale(1.06);
 }
+
 .embedTitles {
-  margin-top: 0px;
-  font-size: 1.25em;
-  color: white;
+    margin-top: 0px;
+    font-size: 1.25em;
+    color: white;
 }
+
 .embedDescriptions {
-  margin-bottom: 0px;
-  color: white;
+    margin-bottom: 0px;
+    color: white;
 }
+
 .lain {
-  color: #393c44;
-  border-color: #393c44;
-  background-color: #393c44;
-  width: auto;
+    color: #393c44;
+    border-color: #393c44;
+    background-color: #393c44;
+    width: auto;
 }
+
 .links {
-  color: #4286f4;
-  transition: 0.3s;
-  text-decoration: none;
+    color: #4286f4;
+    transition: 0.3s;
+    text-decoration: none;
 }
+
 .links:hover {
-  color: red;
-  text-decoration: none;
-  font-weight: 12px;
+    color: red;
+    text-decoration: none;
+    font-weight: 12px;
 }
+
 .embedFooter {
-  color: gray;
-  /*padding-top: 40px;*/
-  margin-bottom: 0px;
+    color: gray;
+    /*padding-top: 40px;*/
+    margin-bottom: 0px;
 }
+
 .classyText {
-  font: 600 25px "Karla", sans-serif;
+    font: 600 25px "Karla", sans-serif;
 }
+
+.inviteLink {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #32353A;
+    border-radius: 5px 15px 15px 5px;
+    margin-bottom: 30px;
+    border-left: 5px #592a16 solid;
+    transition: 0.3s;
+    margin-right: 20px;
+}
+
+.separator {
+    margin-bottom: 60px;
+}
+
+.inviteLink:hover {
+    background-color: #393c44;
+}
+
+.embedBottom {
+    color: white;
+    background-color: #32353A;
+    padding: 50px;
+    font: 600 16px "Karla", sans-serif;
+    margin-bottom: 20px;
+    border-radius: 5px 15px 15px 5px;
+    border-left: 10px #4286f4 solid;
+    transition: 0.3s;
+    size: (1, 0.8);
+}
+
+.embedBottom:hover {
+    border-left: 10px #51ff3a solid;
+    transform: scale(1.06);
+}
+
+.arrowDown {
+    padding: 10px;
+    box-sizing: inherit;
+    background-color: #4286f4;
+}
+
+
+/*.inviteButton {
+  padding: 5px;
+  margin: 0;
+  background-color: blue;
+}*/
