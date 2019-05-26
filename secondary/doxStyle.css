@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #36393F;
+    overflow: hidden;
+}
+
+.botname {
+    display: inline-flex;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    padding-left: 20px;
+}
+
+#topbar {
+    position: absolute;
+    min-width: 50px;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #2f3238;
+    font: 200 20px "Karla";
+    background-color: #36393F;
+    z-index: 1;
+    width: 100%;
+    color: white;
+}
+
+#sidebar {
+    min-height: 50%;
+    margin-top: 100px;
+    border-right: 1px solid #25272b;
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #2F3136;
+    transition: 0.3s;
+}
+
+#sidebar li {
+    list-style-type: none;
+    margin: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 0px;
+    width: auto;
+    font: 300 20px "Karla";
+    border-radius: 5px 0px 0px 5px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+#sidebar li:hover {
+    background-color: #ff0452;
+    border-left: 5px solid white;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover {
+    color: black;
+}
+
+.content {
+    font: 600 15px "Karla";
+    position: fixed;
+    padding-left: auto;
+    padding-bottom: auto;
+    padding-top: auto;
+    padding-right: auto;
+    margin-top: 125px;
+    margin-right: 20px;
+    align-content: center;
+    width: auto;
+    left: 325px;
+    color: white;
+}
+
+#sidebar.show {
+    right: 100%;
+}
+
+#sidebar.hide {
+    right: -100%;
+}

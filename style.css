@@ -141,9 +141,14 @@ div {
     background-color: #4286f4;
 }
 
+.TS {
+    right: -100%;
+}
 
-/*.inviteButton {
-  padding: 5px;
-  margin: 0;
-  background-color: blue;
-}*/
+.cmd {
+    right: -100%;
+}
+
+.fb {
+    right: -100%;
+}

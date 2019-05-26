@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Box 🎧 | Docs</title>
+    <link rel="stylesheet" type="text/css" href="./doxStyle.css">
+    <script type="text/javascript">
+        function toggleHome() {
+            document.getElementsByClassName('home').classList.toggle('show')
+        }
+
+        function toggleTS() {
+            document.getElementsByClassName('home').classList.toggle('hide')
+        }
+
+        function toggleCommands() {
+            document.getElementsByClassName('home').classList.toggle('show')
+        }
+
+        function toggleFeedback() {
+            document.getElementsByClassName('home').classList.toggle('show')
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var trigger = $('#sidebar ul a li'),
+                container = $('#content');
+
+            trigger.on('click', async function() {
+                var $this = $(this),
+                    target = await $this.data('target');
+                console.log(target)
+
+                await container.load(`commands.html`);
+
+                return false;
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="vue-app">
+        <div id="topbar">
+            <a href="../index.html">
+                <img align="center" class="logo" src="https://cdn.discordapp.com/avatars/543876982216196108/c2e33a1ce48e67c364b8f1b4db260dd4.png?size=2048">
+                <!--<h1 class="botname"> Box 🎧</h1>-->
+            </a>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a class="links" href="#" data-target="commands">Commands</a></li>
+
+            </ul>
+        </div>
+        <div id="content">
+        </div>
+    </div>
+
+</body>
+
+
+</html>
