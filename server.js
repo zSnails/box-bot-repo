@@ -8,7 +8,7 @@ app.user(express.static(__dirname));
 
 
 app.get('/', function(req, res) {
-    res.render('index');
+    res.render('index.html');
 });
 
 app.listen(port, function() {
