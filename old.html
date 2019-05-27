@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Box 🎧</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1 class="titles" align="center">Box 🎧</h1>
+    <h2 align="center" class="titles">Box 🎧, Simple, Powerful.</h2>
+    <div id="container" align="center">
+        <div class="embed fade-scroll">
+            <p class="embedTitles">Break the limits.</p>
+            <p class="embedDescriptions">Play 10 hour videos without any problems.</p>
+        </div>
+        <div class="embed fade-scroll">
+            <p class="embedTitles">Easy to use.</p>
+            <p class="embedDescriptions">Just add Box 🎧 to your server and start playing your favorite music.</p>
+        </div>
+        <div class="embed fade-scroll">
+            <p class="embedTitles">+99% Uptime.</p>
+            <p class="embedDescriptions">With an uptime of 99.7% Box 🎧 is <i>almost</i> always online.</p>
+            <p class="embedFooter">Data taken from <a class="links" href="https://botlist.space">botlist.space</a>.</p>
+        </div>
+        <div class="embed fade-scroll">
+            <p class="embedTitles">24/7 Support.</p>
+            <p class="embedDescriptions">Our staff is <a class="links" href="https://discord.gg/D6vjYyn">here</a> to help!</p>
+        </div>
+        <div class="embedBottom fade-scroll">
+            <p class="embedTitles">Want the bot?</p>
+            <p class="embedDescriptions"><a class="links" href="https://discordapp.com/oauth2/authorize?client_id=543876982216196108&permissions=45157632&scope=bot">Invite</a> it!</p>
+        </div>
+
+    </div>
+    <p align="center"><a class="links" href="./secondary/docs.html">Documentation.</a></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+
+            var documentEL = $(document),
+                fadeElem = $('.fade-scroll');
+
+            documentEL.on('scroll', function() {
+                var curScrollPos = documentEL.scrollTop();
+
+                fadeElem.each(function() {
+                    var $this = $(this),
+                        elemOffsetTop = $this.offset().top;
+                    if (curScrollPos > elemOffsetTop) $this.css('opacity', 1 - (curScrollPos - elemOffsetTop) / 100);
+                });
+            });
+
+        });
+    </script>
+</body>
+
+</html>

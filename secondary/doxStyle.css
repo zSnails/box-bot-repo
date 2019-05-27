@@ -94,3 +94,18 @@ body {
 #sidebar.hide {
     right: -100%;
 }
+
+.selected {
+    list-style-type: none;
+    /*padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;*/
+    margin-left: 20px;
+    /*width: auto;*/
+    font: 300 20px "Karla";
+    border-radius: 5px 0px 0px 5px;
+    text-align: left;
+    transition: 0.3s;
+    background-color: #ff0452;
+    border-left: 5px solid white;
+}

@@ -22,22 +22,6 @@
         }
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            var trigger = $('#sidebar ul a li'),
-                container = $('#content');
-
-            trigger.on('click', async function() {
-                var $this = $(this),
-                    target = await $this.data('target');
-                console.log(target)
-
-                await container.load(`commands.html`);
-
-                return false;
-            });
-        });
-    </script>
 
 </head>
 
@@ -51,11 +35,23 @@
         </div>
         <div id="sidebar">
             <ul>
-                <li><a class="links" href="#" data-target="commands">Commands</a></li>
+                <a href="./docs.html" class="links">
+                    <li>Home</li>
+                </a>
+                <a href="#" class="links">
+                    <li>Commands</li>
+                </a>
+                <a href="#" class="links">
+                    <li>Support</li>
+                </a>
+                <a href="#" class="links">
+                    <li>Acknowledgements</li>
+                </a>
 
             </ul>
         </div>
         <div id="content">
+
         </div>
     </div>
 
