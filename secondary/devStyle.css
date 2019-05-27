@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+body {
+    background-color: #36393F;
+}
+
+#main {
+    margin: 50px;
+    padding: auto;
+    /*width: auto;
+  heigth: 500px;*/
+    min-height: 50px;
+    border: white;
+    position: relative;
+    text-align: left;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: none;
+}
+
+.devimg {
+    margin-bottom: 0;
+    height: 300px;
+    width: 300px;
+    padding: 15px;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+
+#nav {
+    font: 500 20px "Karla";
+    margin: 50px;
+    padding: auto;
+    min-height: 50px;
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-flow: column;
+    flex-direction: row;
+}
+
+#nav li {
+    list-style-type: none;
+}
+
+.devnameandbio {
+    color: white;
+}
+
+.devbox {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    font: 600 16px "Karla";
+    background-color: #2F3136
+}
+
+.links {
+    color: #4286f4;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.links:hover {
+    color: red;
+    text-decoration: none;
+    font-weight: 12px;
+}
